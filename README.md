@@ -13,6 +13,6 @@ it can be install on x64 systems
   
 ## About US
 
-Telegram channel : [Touch](tg://resolve?domain=sprcpu_company)
+Telegram channel : ```[Touch](https://t.me/sprcpu_company)```
 
-support : [Touch](tg://resolve?domain=reloadlife)
+support : ```[Touch](https://t.me/reloadlife)```
