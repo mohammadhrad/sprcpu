@@ -1,0 +1,130 @@
+#!/usr/bin/env bash
+RED='\033[0;31m'
+
+NC='\033[0m'
+
+CYAN='\033[0;36m'
+
+read -p " Select Yout Language [FA/EN] :"
+    
+    if [ "$REPLY" == "FA" ]; then 
+        LANG="FA";
+        echo -e "\n\n${CYAN}زبان فارسی تنظیم شد ! ${NC}"
+    else 
+        LANG="EN";
+        echo -e "\n\n${CYAN}English Select As Language ${NC}"
+    fi
+
+    make_progress() {
+exe=`lua <<-EOF
+    print(tonumber($1)/tonumber($2)*100)
+EOF
+`
+    echo ${exe:0:4}
+}
+    install() {
+        if [ -x "$(which apt)" ]; then
+            if [ "$LANG" == "FA" ]; then 
+                echo -e "\n\n${CYAN} در حال آماده سازی سرور شما ! ${NC}";
+            else
+                echo -e "\n\n${CYAN} Making Your Server Ready! ${NC}"
+            fi
+            sudo apt update --force-yes &>> /dev/null
+            LIB=(
+            'libreadline-dev'
+            'libconfig-dev' 
+            'libssl-dev' 
+            'lua5.2'
+            'liblua5.2-dev'
+            'libevent-dev'
+            'libjansson*'
+            'libpython-dev'
+            'make'
+            'autoconf'
+            'unzip'
+            'git'
+            'redis-server'
+            'g++'
+            'liblua5.2-dev'
+            'git'
+            'make'
+            'unzip'
+            'curl'
+            'libcurl4-gnutls-dev'
+            )
+            local i
+            for ((i=0;i<${#LIB[@]};i++)); do
+                printf "\r\33[2K"
+                printf "\r installing wait... [`make_progress $(($i+1)) ${#LIB[@]}`%%] [$(($i+1))/${#LIB[@]}] ${LIB[$i]}"
+                apt install ${LIB[$i]} &>> /dev/null
+            done
+        else 
+            if [ "$LANG" == "FA" ]; then 
+                echo -e "\n\n${CYAN} این اسکریپت تنها در سیستم عامل اوبونتو اجرا میشود ! ${NC}";
+            else
+                echo -e "\n\n${CYAN} Error, this script can just run on ubuntu ! ${NC}"
+            fi
+            exit 1;
+            exit 2;
+            exit 3;
+        fi
+    }
+    install_Rocks(){ 
+        wget -O LuaRocks.tar.gz "http://luarocks.org/releases/luarocks-2.2.2.tar.gz" &>> log.txt
+        tar zxpf LuaRocks.tar.gz &>> log.txt
+        cd luarocks-2.2.2/
+        ./configure; sudo make bootstrap &>> log.txt
+        #####################
+        lualibs=(
+        'luasec'
+        'luasocket'
+        'redis-lua'
+        'lua-term'
+        'serpent'
+        'dkjson'
+        'lua-cjson'
+        'cjson'
+        'luautf8'
+        'xml'
+        'multipart-post'
+        'fakeredis'
+        'Lua-cURL'
+        )
+        local i
+        for ((i=0;i<${#lualibs[@]};i++)); do
+            printf "\r\33[2K"
+            printf "\r installing libs wait... [`make_progress $(($i+1)) ${#lualibs[@]}`%%] [$(($i+1))/${#lualibs[@]}] ${lualibs[$i]}"
+            luarocks install ${lualibs[$i]} &>> log.txt
+        done
+        if [ "$LANG" == "FA" ]; then 
+            echo -e "\n\n${CYAN} کتاب خانه های Lua نصب شد ! ! ${NC}";
+        else
+            echo -e "\n\n${CYAN} Luarocks installation finished ! ${NC}"
+        fi
+    }
+    download_tgcli(){  
+        wget -O TeleCli "https://valtman.name/files/telegram-cli-1222" &>> /dev/null
+        chmod +x TeleCli
+        cp TeleCli /bin
+        if [ "$LANG" == "FA" ]; then 
+            echo -e "\n\n${CYAN} دانلود تلگرام ${NC}";
+        else
+            echo -e "\n\n${CYAN} Downloading Telegram-CLI Binary ${NC}"
+        fi
+    }
+
+    RemoveBull(){ 
+        rm -R luarocks-2.2.2 &>> /dev/null
+        rm LuaRocks.tar.gz &>> /dev/null
+        rm -R TeleCli &>> /dev/null
+        rm log.txt &>> /dev/null
+    }
+
+install 
+install_Rocks
+download_tgcli
+RemoveBull
+echo -e "FinisheD !"
+echo -e "Now Run ./1.sh "
+echo -e "Then ./2.sh"
+echo -e "and Then ./3.sh"
