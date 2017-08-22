@@ -8,7 +8,7 @@ it can be install on x64 systems
   git clone https://github.com/reloadlife/sprcpubot.git
   cd f80
   chmod +x install
-  ./install ubuntu #for Ubuntu Users !
+  ./install
   ```
   
 ## About US
