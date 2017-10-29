@@ -7,7 +7,7 @@
 	end
 		-- /Reload 
 		if text == ('`>` *Bot reloaded Success !*\n'
-			..'`>` *See Reload Logs In* @F80\\_Logs\n') then
+			..'`>` *See Reload Logs In* @PvMessenger\n') then
 			if Lang:lower() == 'en' then
 				text2 = {
 					"Reloaded !:/",
@@ -722,9 +722,9 @@
 			end
 		elseif text == ('START_P') then 
 			if Lang:lower() == 'en' then
-				return "*Hello Sir!*\n_IM SPR-CPU\'s Smart bot!_\nUse Me To Secure your Groups ;)'"
+				return "*Hello Sir!*\n_IM Bot PvMessenger\'s Smart bot!_\nUse Me To Secure your Groups ;)'"
 			else
-				return "سلام!\nمن ربات هوشمند تیم SPR-CPU هستم\nاز من برای امن کردن گروه های خود استفاده کنید!"
+				return "سلام!\nمن ربات هوشمند تیم PvMessenger هستم\nاز من برای امن کردن گروه های خود استفاده کنید!"
 			end
 		elseif text == ('About Us') then 
 			if Lang:lower() == 'en' then
@@ -788,16 +788,16 @@
 			end
 		elseif text == ('BUY_SPR_TEXT') then 
 			if Lang:lower() == 'en' then
-				return "Select Amount of Charge You Need!\nEach `SPR` Cousts as `0.25$`.\n"
+				return "Select Amount of Charge You Need!\nEach `Bot` Cousts as `0.25$`.\n"
 			else
 				return "مفدار موجودی مورد نظر خود را انتخاب کنید\nهر یک` SPR` معادل` 1000` تومان است\n."
 			end
 		elseif text == ('RULES_TEXT') then 
 			if Lang:lower() == 'en' then
-				return '*SPR-CPU Client Bot Rules !*\n'
-				..'`1` : _If you add Bot To A Porn Group Your account will be Block and your_ SPR _Will lose!_\n'
+				return '*Bot Client Bot Rules !*\n'
+				..'`1` : _If you add Bot To A Porn Group Your account will be Block and your_ Bot _Will lose!_\n'
 			else
-				return '*قوانین استفاده از ربات مدیریتی SPRCPU !*\n'
+				return '*قوانین استفاده از ربات مدیریتی Bot !*\n'
 				..'`1` : *افزودن ربات در گروه های ضد اسلامی و پورن ممنوع میباشد !(در صورت دیده شدن چنین گروه هایی اکانت شما همراه با تمامی گروه ها و SPR های شما مسدود میشود !*'
 			end
 		elseif text == ('ERROR_PROMOTE') then 
@@ -1061,9 +1061,9 @@
 			end
 		elseif text == ('GET_GP_4') then 
 			if Lang:lower() == 'en' then
-				return 'Invite Me from This link to your group and Make me as an administrator ! \n link : t.me/SPRCPU_BOT?startgroup=new'
+				return 'Invite Me from This link to your group and Make me as an administrator ! \n link : t.me/BaPal_BOT?startgroup=new'
 			else
-				return 'از طریق لینک زیر مرا به گروه اد کنید و مرا ادمین کنید !\n لینک : t.me/SPRCPU_BOT?startgroup=new'
+				return 'از طریق لینک زیر مرا به گروه اد کنید و مرا ادمین کنید !\n لینک : t.me/BaPal_BOT?startgroup=new'
 			end
 		elseif text == ('GET_VIP_GP_1') then 
 			if Lang:lower() == 'en' then
