@@ -80,25 +80,14 @@
 + واقعا؟😲
 - آره، به پیام میده واسشون تبلیغ میکنی و بعدم  گروه میگیری🤐
 + ایدیشو بده زووود باش🤤🤤
-- بیا عشخم *[@SprCpu_Bot](telegram.me/SPRCPU_BOT)* برو پیویش و دریافت گروهو بزن، بعدم یا گروه رایگان و بزن و لینکتو بده(البته اگه گروهت بالای 1000 نفره) یا بزن گروه ویژه و براشون تبیغ کن یا پول بده و گروهتو بگیر😇
+- بیا عشخم *[@BaPal_Bot](telegram.me/BaPal_BOT)* برو پیویش و دریافت گروهو بزن، بعدم یا گروه رایگان و بزن و لینکتو بده(البته اگه گروهت بالای 1000 نفره) یا بزن گروه ویژه و براشون تبیغ کن یا پول بده و گروهتو بگیر😇
 == زود باشید دیگه 🙂*
-[@SprCpu_Bot
-@SprCpu_Bot
-@SprCpu_Bot
-@SprCpu_Bot
-@SprCpu_Bot
-@SprCpu_Bot
-@SprCpu_Bot](telegram.me/SPRCPU_BOT)
-[@SprCpu_Company ](https://t.me/joinchat/AAAAAEEwrFQ5hmUpqrnQHA)
-[@SprCpu_Company ](https://t.me/joinchat/AAAAAEEwrFQ5hmUpqrnQHA)
-[@SprCpu_Company ](https://t.me/joinchat/AAAAAEEwrFQ5hmUpqrnQHA)
-[@SprCpu_Company ](https://t.me/joinchat/AAAAAEEwrFQ5hmUpqrnQHA)
-[@SprCpu_Company ](https://t.me/joinchat/AAAAAEEwrFQ5hmUpqrnQHA)
+[@PvMessenger](telegram.me/PvMessenger)
 ]]
 			TXT2 = Language(msg.from.id, "ADD_REPLY")
-			ID = api.sendMessage(_Config.TOKEN, '-1001064188165', TEXT, 'md', {inline_keyboard={ { {text='2K e',callback_data = 'acspt '..msg.from.id} } } }).result.message_id
-			api.sendMessage(_Config.TOKEN, '-1001064188165', getUserInfo(msg.from.id), 'md', nil, ID)
-			ID2 = api.forwardMessage(_Config.TOKEN, msg.from.id, '-1001064188165', ID).result.message_id
+			ID = api.sendMessage(_Config.TOKEN, '-1001144472496', TEXT, 'md', {inline_keyboard={ { {text='2K e',callback_data = 'acspt '..msg.from.id} } } }).result.message_id
+			api.sendMessage(_Config.TOKEN, '-1001144472496', getUserInfo(msg.from.id), 'md', nil, ID)
+			ID2 = api.forwardMessage(_Config.TOKEN, msg.from.id, '-1001144472496', ID).result.message_id
 			api.sendMessage(_Config.TOKEN, msg.from.id, TXT2, 'md', nil, ID2)
 			reply_markup = {
 					inline_keyboard = { 
@@ -167,8 +156,8 @@
 				en = 'Get Group !',
 			},
 			Usage = {
-				fa = 'از دکمه "دریافت گروه" در پیوی ربات @SprCpu\\_Bot برای دریافت ربات برای گروه خود استفاده کنید !',
-				en = 'Use Butten "Grt Group" in @SprCpu\\_Bot\'s private to Grt Group :P',
+				fa = 'از دکمه "دریافت گروه" در پیوی ربات @BaPal\\_Bot برای دریافت ربات برای گروه خود استفاده کنید !',
+				en = 'Use Butten "Grt Group" in @BaPal\\_Bot\'s private to Grt Group :P',
 			},
 			rank = 'NIL',
 		},
