@@ -13,16 +13,14 @@
 	function ApiRun(msg, matches)
 		if matches[1] == 'stats' and isFull(msg.from.id) then
 			StatS = '\n'
-			..'@SPRCPU\\_CLI :\n'
+			..'Bot Cli Stats :\n'
 			..'*> UsersCount* : `'.. redis:scard('Users') .. '`\n'
 			..'*> GroupsCount* : `'.. redis:scard('Groups!') .. '`\n'
 			..'\n*SuperSearchBot*\n'
 			..'*> UsersCount* : `'.. redis:scard('SuperSearchBot:Users') .. '`\n'
 			..'*Server Stats :*'
-			..'\n*Memmory *: \n'
-			..'```'..io.popen('free -m'):read('*all')..'```\n\n'
 			..'\n*Uptime*:\n```' .. io.popen('uptime'):read('*all') .. '```'
-			..'\n\n\n' .. '@SPRCPU\\_Company'
+			..'\n\n\n' .. '@PvMessenger'
 			RESULTS = {
 				{
 					type = 'article',
