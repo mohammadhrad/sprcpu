@@ -316,14 +316,14 @@
 				..'`id (@Username)` : دریافت اطلاعات (@Username)\n'
 				..'`id (Mention)` : دریافت اطلاعات (Mention)\n'
 				..'`id (UserID)` : دریافت اطلاعات (UserID)\n'
-				..'`فوروارد پیام در پیوی @SPRCPU_BOT و دریافت اطلاعات فرد مورد نظر`\n'
+				..'`فوروارد پیام در پیوی @BaPal_BOT و دریافت اطلاعات فرد مورد نظر`\n'
 				..'*همه میتوانند از این قابلیت استفاده کنند !*\n',
 				en = '`id ` : Get You Information\n'
 				..'`id (reply)` : Get Replied Target Information\n'
 				..'`id (@Username)` : Get (@Username) Information\n'
 				..'`id (Mention)` : Get (Mention) Information\n'
 				..'`id (UserID)` : Get (UserID) Information\n'
-				..'`Forward Message to @SPRCPU_BOT to get Target Information`\n'
+				..'`Forward Message to @BaPal_BOT to get Target Information`\n'
 				..'*Any one Can use this plguin :P !*\n',
 			},
 			rank = 'Member',
