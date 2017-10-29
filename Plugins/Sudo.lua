@@ -11,12 +11,12 @@
 					LoadPlugins ()
 					return Language(msg.sender_user_id_,
 						'`>` *Bot reloaded Success !*\n'
-						..'`>` *See Reload Logs In* @F80\\_Logs\n'
+						..'`>` *See Reload Logs In* @PvMessenger\n'
 					)
 				end
 				if matches[1]:lower() == 'reloadapi' then -- //Reload Api Bot !
 				--	LoadPlugins ()
-					cli.sendInline('SPRCPU_BOT', msg.chat_id_, msg.id_, 'reload', 0)
+					cli.sendInline('BaPal_BOT', msg.chat_id_, msg.id_, 'reload', 0)
 				end
 			else
 				return Language(msg.sender_user_id_, 
