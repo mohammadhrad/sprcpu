@@ -188,8 +188,8 @@ end
 				en = 'A plugin for buy SPR!',
 			},
 			Usage = {
-				fa = '*برای خرید SRP ابتدا به* @SPRCPU\\_BOT *مراجعه کرده و سپس به قشمت خرید SPR رفته و تعداد مورد نظر را انتخاب کنید\nسپس به قمت پرداخت رفته و بعد از پرداخت مبلغ مورد نظر پرداهت را تایید کنید !*',
-				en = '*fist start* @SPRCPU\\_BOT *and then use Butten "Buy SPR" and then select the amount of SPRs you need and Pay it\n after that Verify it :-)*',
+				fa = '*برای خریدBot ابتدا به* @BaPal\\_BOT *مراجعه کرده و سپس به قشمت خرید SPR رفته و تعداد مورد نظر را انتخاب کنید\nسپس به قمت پرداخت رفته و بعد از پرداخت مبلغ مورد نظر پرداهت را تایید کنید !*',
+				en = '*fist start* @BaPal\\_BOT *and then use Butten "Buy SPR" and then select the amount of SPRs you need and Pay it\n after that Verify it :-)*',
 			},
 			rank = 'NIL',
 		},
