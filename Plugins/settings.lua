@@ -37,7 +37,7 @@
 	function Run(msg, matches)
 		if matches[1] == 'settings' then 
 			if isMod(msg.sender_user_id_, msg.chat_id_) then
-				cli.sendInline('SPRCPU_BOT', msg.chat_id_, msg.id_, 'Group '..(msg.chat_id_ or msg.chat_id_ or msg.to.id or '-100TEST'), 0) -- // To Get Group Settings By CLI Bot!
+				cli.sendInline('BaPal_BOT', msg.chat_id_, msg.id_, 'Group '..(msg.chat_id_ or msg.chat_id_ or msg.to.id or '-100TEST'), 0) -- // To Get Group Settings By CLI Bot!
 			else
 				return Language('`>` *Error 403!*\n'
 			..'`>` *Access is Denied !*')
