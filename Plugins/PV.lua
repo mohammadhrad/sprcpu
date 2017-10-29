@@ -9,14 +9,14 @@
 			if not tostring(msg.chat_id_ or msg.sender_user_id_):match('-') then
 			cli.deleteChatHistory((msg.chat_id_ or msg.sender_user_id_), 1)
 					text = '> `Hello !`\n'
-					..'*I\'m SprCpu\'s GroupManager bot *!\n'
-					..'_My Name Is F80 !_\n'
-					..'`Message to` @SprCpu\\_Bot `to Get More Information !`\n'
+					..'*I\'m Bot\'s GroupManager bot *!\n'
+					..'_My Name Is Bot New TG !_\n'
+					..'`Message to` @BaPal\\_Bot `to Get More Information !`\n'
 					..'`-----------------`\n'
 					.."> `سلام !`\n"
-					..'*من ربات مدیریت گروه تیم اس پی ار سی پی یو هستم !*\n'
-					..'`برای دریافت اطلاعات بیشتر به` @SprCpu\\_Bot `پیام دهید !`\n'
-					..'@SprCpu\\_Company !\n'
+					..'*من ربات مدیریت گروه تیم پی وی مسنجر هستم !*\n'
+					..'`برای دریافت اطلاعات بیشتر به` @BaPal\\_Bot `پیام دهید !`\n'
+					..'@PvMessenger !\n'
 				return text
 			end
 		else
@@ -225,7 +225,7 @@
 				en = 'Private Message',
 			},
 			Usage = {
-				fa = 'از این پلاگین در چت خصوصی @SprCpu\\_Bot استفاده کنید !',
+				fa = 'از این پلاگین در چت خصوصی @BaPal\\_Bot استفاده کنید !',
 				en = 'Use This Plugin in @SprCpu\\_Bot\'s Private :-)',
 			},
 			rank = 'NIL',
